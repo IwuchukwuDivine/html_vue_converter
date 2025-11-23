@@ -104,21 +104,33 @@ Documentation improvements are always welcome:
 ### Local Setup
 
 ```bash
-# 1. Fork and clone the repository
-git clone https://github.com/IwuchukwuDivine/html_vue_converter.git
+# 1. Fork the repository on GitHub (click the "Fork" button)
+
+# 2. Clone YOUR fork (replace YOUR_USERNAME with your GitHub username)
+git clone https://github.com/YOUR_USERNAME/html_vue_converter.git
 cd html_vue_converter
 
-# 2. Install dependencies
+# 3. Create a new branch for your changes
+git switch -c <branch-name>
+
+# 4. Install dependencies
 npm install
 
-# 3. Run development server
+# 5. Run development server
 npm run dev
 
-# 4. Run tests
+# 6. Run tests
 npm test
 
-# 5. Run tests in watch mode (recommended during development)
+# 7. Run tests in watch mode (recommended during development)
 npm test -- --watch
+
+# 8. After making changes, commit and push
+git add .
+git commit -m "your commit message"
+git push origin <branch-name>
+
+# 9. Create a Pull Request on GitHub
 ```
 
 ### Project Structure
