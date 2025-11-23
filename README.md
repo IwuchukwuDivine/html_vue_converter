@@ -3,9 +3,11 @@
 A powerful web-based tool that instantly converts vanilla HTML into Vue 3 Single File Components (SFC). Supports both **Composition API** and **Options API** with intelligent parsing of scripts, styles, and templates.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Open Source Helpers](https://www.codetriage.com/iwuchukwudivine/html_vue_converter/badges/users.svg)
 ![Vue](https://img.shields.io/badge/Vue-3.5-brightgreen.svg)
 ![Nuxt](https://img.shields.io/badge/Nuxt-4.2-00DC82.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)
+
 
 ## ✨ Features
 
