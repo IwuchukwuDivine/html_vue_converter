@@ -1,7 +1,30 @@
 {
   "name": "html_vue_converter",
+  "version": "1.0.0",
+  "description": "A powerful web-based tool that instantly converts vanilla HTML into Vue 3 Single File Components",
+  "author": "Iwuchukwu Divine <ekeneifunanya@gmail.com>",
+  "license": "MIT",
   "type": "module",
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IwuchukwuDivine/html_vue_converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IwuchukwuDivine/html_vue_converter/issues"
+  },
+  "homepage": "https://html-vue-converter.vercel.app",
+  "keywords": [
+    "vue",
+    "vue3",
+    "html",
+    "converter",
+    "sfc",
+    "composition-api",
+    "options-api",
+    "nuxt",
+    "typescript"
+  ],
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
