@@ -91,4 +91,42 @@ const toggleDark = useToggle(isDark);
   color: var(--color-text);
   transition: color 0.2s ease;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1rem;
+  }
+
+  .logo-icon {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.125rem;
+  }
+
+  .theme-toggle {
+    padding: 0.5rem;
+  }
+
+  .theme-icon {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .logo-section {
+    gap: 0.625rem;
+  }
+
+  .logo-icon {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
 </style>

@@ -349,4 +349,41 @@ const handleClear = () => {
 .file-input {
   display: none;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .editor-header {
+    padding: 0.875rem 1rem;
+  }
+
+  .editor-title {
+    font-size: 1rem;
+  }
+
+  .editor-icon {
+    font-size: 1.25rem;
+  }
+
+  .action-btn {
+    padding: 0.375rem;
+  }
+
+  .action-icon {
+    font-size: 1rem;
+  }
+
+  .editor-textarea,
+  .editor-preview {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .editor-footer {
+    padding: 0.625rem 1rem;
+  }
+
+  .info-text {
+    font-size: 0.8125rem;
+  }
+}
 </style>

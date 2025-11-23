@@ -192,6 +192,27 @@ const vueCode = computed(() => {
   margin-bottom: 3rem;
 }
 
+/* Mobile responsive: stack vertically on smaller screens */
+@media (max-width: 768px) {
+  .converter-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    min-height: auto;
+  }
+
+  /* Increase editor height on mobile */
+  .converter-grid > * {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even better height for very small screens */
+  .converter-grid > * {
+    min-height: 350px;
+  }
+}
+
 .features-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -243,5 +264,35 @@ const vueCode = computed(() => {
   gap: 0.5rem;
   justify-content: center;
   color: var(--color-text-secondary);
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .api-selector {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .api-button {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .api-icon {
+    font-size: 1.125rem;
+  }
+
+  .features-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .feature-card {
+    padding: 1.25rem;
+  }
 }
 </style>
