@@ -97,9 +97,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { useDark } from "@vueuse/core";
 
-const isDark = useDark(); // theme toggle
 const htmlCode = ref("");
 const apiStyle = ref<"composition" | "options">("composition");
 
