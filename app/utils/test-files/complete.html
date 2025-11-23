@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Complete Example</title>
+    <style>
+      .todo-app {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        border-radius: 8px;
+      }
+
+      .todo-item {
+        padding: 10px;
+        margin: 10px 0;
+        background: white;
+        border-radius: 4px;
+      }
+
+      .completed {
+        text-decoration: line-through;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo-app">
+      <h1>Todo List</h1>
+      <input type="text" id="todoInput" placeholder="Add new todo" />
+      <button onclick="addTodo()">Add</button>
+      <div id="todoList"></div>
+    </div>
+
+    <script>
+      const todos = [];
+      let nextId = 1;
+
+      function addTodo() {
+        const input = document.getElementById("todoInput");
+        const text = input.value.trim();
+
+        if (text) {
+          todos.push({ id: nextId++, text, completed: false });
+          input.value = "";
+          renderTodos();
+        }
+      }
+
+      function toggleTodo(id) {
+        const todo = todos.find((t) => t.id === id);
+        if (todo) {
+          todo.completed = !todo.completed;
+          renderTodos();
+        }
+      }
+
+      const renderTodos = () => {
+        const list = document.getElementById("todoList");
+        list.innerHTML = todos
+          .map(
+            (todo) =>
+              `<div class="todo-item ${todo.completed ? "completed" : ""}" 
+                      onclick="toggleTodo(${todo.id})">
+                    ${todo.text}
+                </div>`
+          )
+          .join("");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>With Script</title>
+  </head>
+  <body>
+    <h1>Counter App</h1>
+    <p id="count">0</p>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+
+    <script>
+      let count = 0;
+      const step = 1;
+
+      function increment() {
+        count += step;
+        document.getElementById("count").textContent = count;
+      }
+
+      function decrement() {
+        count -= step;
+        document.getElementById("count").textContent = count;
+      }
+
+      const reset = () => {
+        count = 0;
+        document.getElementById("count").textContent = count;
+      };
+    </script>
+  </body>
+</html>

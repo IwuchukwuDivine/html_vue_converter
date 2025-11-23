@@ -1,0 +1,31 @@
+{
+  "name": "html_vue_converter",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@nuxt/icon": "^2.1.0",
+    "@pinia/nuxt": "^0.11.2",
+    "@tailwindcss/vite": "^4.1.17",
+    "@vueuse/core": "^14.0.0",
+    "nuxt": "^4.2.1",
+    "pinia-plugin-persistedstate": "^4.5.0",
+    "tailwindcss": "^4.1.17",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@iconify-json/uil": "^1.2.3",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.13",
+    "vue-tsc": "^3.1.1"
+  }
+}
