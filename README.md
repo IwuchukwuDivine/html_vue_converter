@@ -8,6 +8,7 @@ A powerful web-based tool that instantly converts vanilla HTML into Vue 3 Single
 ![Nuxt](https://img.shields.io/badge/Nuxt-4.2-00DC82.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)
 
+![Demo of HTML to Vue Converter](./public/demo.gif)
 
 ## ✨ Features
 
